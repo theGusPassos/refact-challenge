@@ -1,6 +1,6 @@
-const crypto = require("crypto");
+import crypto from "crypto";
 
-exports.deterministicPartitionKey = (event) => {
+export const deterministicPartitionKey = (event: any) => {
   const TRIVIAL_PARTITION_KEY = "0";
   const MAX_PARTITION_KEY_LENGTH = 256;
   let candidate;
